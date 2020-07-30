@@ -18,6 +18,12 @@ echo Checking requirements...
 
 pacman -S macchanger nmap
 
+sudo pacman -S macchanger nmap
+
+sudo apt install macchanger nmap
+
+apt install macchanger nmap
+
 clear
 
 read -p "Enter wireless interface: " interface
