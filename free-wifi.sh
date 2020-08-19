@@ -16,13 +16,13 @@ sleep 1
 
 echo Checking requirements...
 
-pacman -S macchanger nmap
+pacman -S macchanger nmap net-tools
 
-sudo pacman -S macchanger nmap
+sudo pacman -S macchanger nmap net-tools
 
-sudo apt install macchanger nmap
+sudo apt install macchanger nmap net-tools
 
-apt install macchanger nmap
+apt install macchanger nmap net-tools
 
 clear
 
@@ -54,7 +54,11 @@ sleep 2
 
 echo 
 
+sudo ifconfig $interface down
+
 sudo macchanger -m $target $interface
+
+sudo ifconfig $interface up
 
 echo 
 
