@@ -34,6 +34,8 @@ read -p "Enter IP range to scan: " range
 
 echo
 
+clear
+
 echo Scanning...
 
 sleep 2
@@ -52,7 +54,7 @@ sleep 2
 
 echo 
 
-macchanger -m $target $interface
+sudo macchanger -m $target $interface
 
 echo 
 
